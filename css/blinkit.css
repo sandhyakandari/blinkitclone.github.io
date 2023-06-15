@@ -1,0 +1,321 @@
+  @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Noto+Sans+JP:wght@100;400;500&display=swap');
+
+body{ margin:0px;
+    font-family: 'Geologica', sans-serif;}
+header{border: 1px solid rgba(212, 210, 208, 0.307);
+    height: 85px;
+    display: flex;
+    position:sticky;
+    top:0px;
+    bottom:0px;
+    background-color: #ffffff;
+
+}
+.logo{ display: flex;
+    width:34%;
+}
+.logoimg:hover{
+  cursor: pointer;
+}
+.logoimg{display: flex;
+    width:156px;
+    align-items: center;
+    margin-left:21px;
+    border-right: 1px solid rgb(237, 236, 235);
+}
+
+.textdel{
+    display: flex;
+    width:270px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textdel:hover{
+    cursor: pointer;
+    background-color: rgba(250, 247, 247, 0.476)
+}
+.textdel h3{margin:2px 0px;
+    font-family: 'Geologica', sans-serif;
+
+   /* font-family: 'Noto Sans JP', sans-serif; */}
+.textdel p{ margin:0px;}
+.searchbox{ display: flex;
+    padding-left:9px;
+align-items: center;
+width:48%;
+margin:16px 1px;
+height:50px;
+color:gainsboro;
+font-family:'Geologica', sans-serif;
+background-color:rgb(241, 239, 239);
+border-radius:12px;
+border:1px solid rgb(240, 239, 237);
+position:relative;}
+.searchbox input{
+    height:50px;
+    border:none;
+    padding-left:4px;
+    background-color:rgb(241, 239, 239);
+    justify-content: center;
+    font-size: 15px;
+} 
+.searchbox input:focus{
+    outline: none;
+    padding-left:12px;
+  } 
+  .searchbox svg{ width:20px;
+color:black;}
+
+.logincart{
+    display: flex;
+    width:21%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:20px;
+    
+}
+.logincart a{
+    text-decoration: none;
+    font-size:19px;
+}
+.logincart button{
+    font-family: 'Geologica', sans-serif;
+    cursor: pointer;
+    height: 50px;
+    width:110px;
+    border-radius: 8px;
+    background-color: green;
+    font-size:16px;
+    color:white;
+    display: flex;
+ align-items: center;
+ justify-content: center;
+ gap:4px;
+}
+
+
+/* main container*/
+main{overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+}
+.shopnow { 
+    width:1270px;
+    display: flex;
+    justify-content: center;
+    
+}
+.shopnow img{
+   width:100%;
+}
+.ordernowbox{
+    width:1240px;
+    display: flex;
+    flex-direction: row;
+    overflow-x:scroll;
+    margin-top:14px;
+  }
+.ordernowbox img{
+    width:330px;
+    margin-right:18px;
+}
+
+/*list items */
+.item-list{margin-top:8px;
+    display: grid;
+    width:1270px;
+    justify-content: center;
+    grid-template-columns:repeat(10,1fr);
+}
+.item-list img{
+    width:128px;
+}
+
+/* dairy ,bread section*/
+.dairyprod{
+    display: flex;
+    width:1250px;
+    flex-direction:row;
+    gap:12px;
+    overflow-x: scroll;
+}
+.dairyheadingsec{
+    display: flex;
+    justify-content: space-between;
+    width:1240px;
+    align-items: center;
+   
+}
+.dairyheadingsec a{ text-decoration: none;
+color:green;
+font-size: 18px;}
+.dairyprod-items{
+    display: flex;
+    flex-direction:column; 
+    border: 1px solid rgba(219, 225, 228, 0.874);
+    border-radius: 6px;
+    box-shadow: 1px 1px rgb(218, 217, 217);
+   width:170px;
+   margin:4px;
+   padding:8px 12px 8px;
+   font-size: 14px;
+}
+.dairyprod-items img{
+    width:140px;
+    margin:0px 8px;
+}
+.dairyprod-items button{
+    width:70px;
+    font-family:'Geologica', sans-serif;
+    height:30px;
+    border-radius: 8px;
+    color:rgb(15, 131, 73);
+    background-color: rgb(195, 223, 195);
+    border-color: yellowgreen;
+}
+.dairyprod-items p{
+    font-size: 11px;
+    margin-top:2px;
+}
+
+.dairyprod-items h4{
+    margin:4px 0px;
+    font-weight: 200;
+}
+.pricesec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pricesec p{
+    margin:0px;
+    font-size: 14px;
+}
+.material-symbols-outlined{
+ display:block !important;
+ font-size: 16px !important;
+
+}
+
+/*footer  */
+footer{
+    display: flex;
+    height:100px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.material-symbols-rounded {
+   color:red;
+   padding:0 5px;
+font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+@media screen and (max-width:1243px) {
+    .ordernowbox{ width:320px;}
+    .ordernowbox img{ width:200px;}
+    .shopnow img{
+        width:1024px;
+    }
+    .item-list{
+        width:1000px;
+        align-items: center;
+        grid-template-columns:repeat(7,1fr);  
+    }  
+ .dairyheadingsec , .dairyprod{
+        width:1000px;
+    }
+    .ordernowbox{
+        width:1000px;
+    }
+}
+    @media screen and (max-width:1000px) {
+        header{
+         display: flex;
+         justify-content: space-between;
+        }
+        .shopnow img{
+            width:750px;
+        }
+        main{
+            width:100%;
+        
+        }
+        .ordernowbox{ width:730px;}
+        .item-list{ width:auto;
+            align-items: center;
+            grid-template-columns:repeat(5,1fr);
+        }
+        .dairyheadingsec , .dairyprod{
+            width:680px;
+        }
+        .dairyheadingsec{
+            font-size: 10px;}
+            .dairyprod-items h4{
+            font-size: 12px;
+            }
+        .textdel{
+            width:200px;
+        }
+        .logoimg{
+            display: none;
+        }
+        
+.searchbox{ display: none;
+    }
+    .logincart button{
+        display: none;
+    }
+        }
+
+        @media screen and (max-width:426px) {
+            .ordernowbox{ width:400px;}
+            .shopnow img{
+                width:400px;
+            }
+            .logo{
+                width:200px;
+            }
+            .item-list{
+                grid-template-columns:repeat(3,1fr);  
+            }  
+         .dairyheadingsec , .dairyprod{
+                width:400px;
+            }
+        }
+
+        @media screen and (max-width:378px) {
+            .ordernowbox{ width:360px;}
+            .ordernowbox img{ width:200px;}
+            .shopnow{
+                display: none;
+            }
+            .item-list{
+                grid-template-columns:repeat(3,1fr);  
+            }  
+         .dairyheadingsec , .dairyprod{
+                width:320px;
+            }
+        }
+        @media screen and (max-width:330px) {
+            .ordernowbox{ width:320px;}
+            .ordernowbox img{ width:200px;}
+            .shopnow{
+                display: none;
+            }
+            .item-list{
+                grid-template-columns:repeat(2,1fr);  
+            }  
+         .dairyheadingsec , .dairyprod{
+                width:310px;
+            }
+        }
